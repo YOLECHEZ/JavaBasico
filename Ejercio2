@@ -1,0 +1,15 @@
+package JavaBasico;
+
+public class JavaBasicoEj2 {
+    public static void main(String[] args) {
+        double precioArticulo = precioMasIva();
+        System.out.println(precioMasIva());
+        
+
+    }
+    static double precioMasIva(){
+        double precioArticulo = 18.99;
+        double iva = 1.21;
+        return precioArticulo * 1.21;
+    }
+}
