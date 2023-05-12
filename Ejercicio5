@@ -1,0 +1,57 @@
+package JavaBasicoInterface;
+
+
+
+public interface CocheCRUD {
+
+    void save();
+
+    void findAll();
+
+    void delete();
+
+}
+public class CocheCRUDImpl implements CocheCRUD {
+
+
+    @Override
+    public void save() {
+
+    }
+
+    @Override
+    public void findAll() {
+
+    }
+
+    @Override
+    public void delete() {
+
+    }
+
+    String save = "Save";
+    String findAll = "FindAll";
+    String delete = " Delete";
+
+    @Override
+    public String toString() {
+        return "CocheCRUDImpl{" +
+                "save='" + save + '\'' +
+                ", findAll='" + findAll + '\'' +
+                ", delete='" + delete + '\'' +
+                '}';
+    }
+}
+public class InterfaceMain {
+    public static void main(String[] args) {
+
+        CocheCRUD cocheCRUD = new CocheCRUDImpl();
+        System.out.println(cocheCRUD);
+        System.out.println("Save");
+        System.out.println("FindAll");
+        System.out.println("Delete");
+
+    }
+}
+
+
